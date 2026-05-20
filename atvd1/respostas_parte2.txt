@@ -1,0 +1,74 @@
+Atividade Pratica 1 - Frameworks
+Aluno: Bernardo Iannini
+
+Parte 2 - Pesquisa Tecnica
+
+------------------------------------------------------------
+
+1) Widget Image - Diferenca entre Image.network e Image.asset
+
+O Image.network serve para carregar imagens direto da internet,
+passando um link (URL) que termina geralmente em .jpg, .png ou .webp.
+Ele precisa de conexao com a internet para funcionar, porque a imagem
+nao esta salva no projeto.
+
+Ja o Image.asset serve para carregar imagens que estao salvas dentro
+do proprio projeto, em uma pasta (normalmente chamada "assets"). Para
+usar, a imagem precisa estar declarada no arquivo pubspec.yaml.
+
+Usamos Image.network quando a imagem esta hospedada em algum site
+e usamos Image.asset quando a imagem ja faz parte do app, evitando
+depender da internet.
+
+------------------------------------------------------------
+
+2) Widget Column - mainAxisAlignment e crossAxisAlignment
+
+Na Column, o eixo principal (main axis) e o vertical e o eixo
+cruzado (cross axis) e o horizontal.
+
+- mainAxisAlignment: controla como os elementos ficam organizados
+  no sentido vertical (cima, meio, baixo, espacados, etc).
+
+- crossAxisAlignment: controla como os elementos ficam organizados
+  no sentido horizontal (esquerda, centro, direita).
+
+Resumindo: mainAxisAlignment cuida do alinhamento de cima para baixo
+e crossAxisAlignment cuida do alinhamento da esquerda para a direita.
+
+------------------------------------------------------------
+
+3) Widget Padding - Por que usar
+
+E uma boa pratica porque o Padding cria um espacamento de verdade
+em volta do widget, deixando o layout organizado e respeitando as
+bordas da tela.
+
+Tentar usar espacos vazios no texto (apertando espaco varias vezes
+ou pulando linhas) nao funciona bem porque:
+
+- Nao se adapta a diferentes tamanhos de tela.
+- O resultado fica diferente dependendo do aparelho.
+- Nao e a forma correta de organizar widgets no Flutter.
+
+Com o Padding o espacamento e controlado em pixels e fica igual em
+qualquer dispositivo, deixando o app mais profissional e organizado.
+
+------------------------------------------------------------
+
+4) StatelessWidget - Quando usar
+
+Usamos o StatelessWidget quando a tela ou o widget NAO precisa mudar
+nada depois de ser desenhado. Ou seja, ele e "sem estado".
+
+Dizer que um widget e "sem estado" significa que ele nao guarda
+informacoes que mudam com o tempo. Ele recebe os dados uma vez,
+desenha a tela e pronto, nao atualiza sozinho.
+
+Exemplos de quando usar:
+- Telas que so mostram informacoes (como o card desta atividade).
+- Botoes, textos e imagens que nao mudam.
+- Layouts fixos.
+
+Quando o app precisa reagir a cliques e mudar valores na tela
+(como um contador ou um quiz), ai sim usamos StatefulWidget.
