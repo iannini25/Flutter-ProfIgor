@@ -11,6 +11,7 @@ desktop.ini
 *.iml
 *.ipr
 *.iws
+*.claude
 
 # === Flutter / Dart (todos os subprojetos) ===
 **/.dart_tool/

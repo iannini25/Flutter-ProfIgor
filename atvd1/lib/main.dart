@@ -30,7 +30,7 @@ class Tela extends StatelessWidget {
             children: [
               SizedBox(height: 16),
               Image.network(
-                'https://upload.wikimedia.org/wikipedia/pt/b/bd/Interestelar_P%C3%B4ster.png',
+                'https://universoracionalista.org/interestelar-um-guia-sem-spoilers-para-entender-a-ciencia-por-tras-do-filme/',
                 height: 250,
               ),
               SizedBox(height: 16),
