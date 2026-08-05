@@ -1,0 +1,114 @@
+Revisao - Atividade 1 - Lanchonete Express
+Aluno: Bernardo Iannini
+
+Parte 2 - Explicacao dos conceitos
+
+------------------------------------------------------------
+
+1) Qual e a funcao do Scaffold em uma tela Flutter?
+
+O Scaffold monta a estrutura basica da tela. Ele ja vem com os
+espacos certos para colocar a appBar, o body, botoes e outras
+partes.
+
+------------------------------------------------------------
+
+2) Para que serve o AppBar?
+
+E a barra que fica no topo da tela. Normalmente coloca o titulo
+do app nela e ela tambem ja mostra o botao de voltar.
+
+------------------------------------------------------------
+
+3) Qual e a diferenca entre StatelessWidget e StatefulWidget?
+
+O StatelessWidget nao muda depois de criado, ele so mostra as
+informacoes. O StatefulWidget tem estado, entao ele pode mudar
+enquanto o app esta rodando.
+
+------------------------------------------------------------
+
+4) Para que serve o setState?
+
+Serve para avisar o Flutter que alguma variavel mudou, ai ele
+desenha a tela de novo com o valor novo. Sem o setState o valor
+muda mas a tela continua igual.
+
+------------------------------------------------------------
+
+5) Explique o que acontece quando usamos Navigator.push.
+
+Ele coloca uma tela nova em cima da tela atual, entao o usuario
+vai para essa nova tela. A tela antiga continua guardada embaixo.
+
+------------------------------------------------------------
+
+6) Explique o que acontece quando usamos Navigator.pop.
+
+Ele tira a tela que esta por cima e volta para a tela anterior.
+
+------------------------------------------------------------
+
+7) Para que serve o TextEditingController?
+
+Serve para controlar o TextField e pegar o texto que o usuario
+digitou, usando o .text.
+
+------------------------------------------------------------
+
+8) Por que e importante validar os campos antes de enviar o pedido?
+
+Porque se o usuario deixar em branco o pedido vai sem as
+informacoes necessarias, ai nao da para saber quem pediu e nem o
+que foi pedido.
+
+------------------------------------------------------------
+
+9) Para que serve o SnackBar?
+
+Serve para mostrar uma mensagem rapida na parte de baixo da tela,
+tipo aviso de erro ou de sucesso. Ela some sozinha depois de um
+tempo.
+
+------------------------------------------------------------
+
+10) O que o showModalBottomSheet faz no aplicativo?
+
+Abre uma janelinha que sobe de baixo da tela mostrando alguma
+informacao. Aqui foi usado para mostrar a promocao do dia.
+
+------------------------------------------------------------
+
+11) Para que serve o AnimatedContainer?
+
+E um Container que faz a mudanca de tamanho, cor ou borda
+acontecer aos poucos, com animacao, em vez de mudar de uma vez.
+
+------------------------------------------------------------
+
+12) Por que usamos SingleChildScrollView em algumas telas?
+
+Para poder rolar a tela quando o conteudo e maior que o espaco
+que tem. Sem ele aparece aquele erro de overflow com as listras
+amarelas e pretas.
+
+------------------------------------------------------------
+
+13) Qual a vantagem de criar um widget personalizado como o CardProduto?
+
+Nao precisa repetir o mesmo codigo para cada produto. E so usar o
+widget e passar o nome, o preco e a descricao de cada um.
+
+------------------------------------------------------------
+
+14) Qual a diferenca entre usar Column e ListView?
+
+A Column so coloca os itens um embaixo do outro e nao rola
+sozinha. O ListView ja rola e e melhor quando tem muitos itens.
+
+------------------------------------------------------------
+
+15) Por que separar partes do codigo em widgets pode deixar o projeto melhor?
+
+Porque o arquivo fica menor e mais facil de entender, e da para
+reaproveitar a mesma parte em outros lugares do app.
