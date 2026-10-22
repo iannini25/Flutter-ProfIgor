@@ -1,0 +1,11 @@
+1. Como o Firebase identifica quem escreveu determinado comentario?
+Pelo uid do usuario logado no Firebase Authentication. Quando a pessoa comenta eu salvo o FirebaseAuth.instance.currentUser!.uid no campo usuarioId do comentario, junto com o nome.
+
+2. Como relacionar um comentario a uma publicacao especifica?
+Salvando o id da publicacao no comentario (campo publicacaoId). Depois na tela de comentarios eu faço where('publicacaoId', isEqualTo: id) pra pegar so os daquela publicacao.
+
+3. Por que utilizamos StreamBuilder para mostrar os comentarios?
+Porque o snapshots() do Firestore retorna um Stream, que fica mandando os dados de novo toda vez que muda alguma coisa no banco. O StreamBuilder reconstroi a tela sozinho quando chega dado novo, sem precisar atualizar a pagina.
+
+4. Como garantir que os comentarios aparecam automaticamente em contas diferentes?
+Salvando os comentarios no Cloud Firestore (que e compartilhado entre todo mundo) e usando snapshots() com StreamBuilder. Assim quando alguem comenta, o Firestore avisa todos que estao escutando aquela consulta e a tela atualiza na hora.
