@@ -1,6 +1,3 @@
-// esse arquivo e gerado pelo comando:
-// dart pub global run flutterfire_cli:flutterfire configure
-// rodar o comando pra trocar pelos dados do projeto do firebase
 import 'package:firebase_core/firebase_core.dart';
 
 class DefaultFirebaseOptions {
@@ -9,11 +6,11 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'COLOCAR_AQUI',
-    appId: 'COLOCAR_AQUI',
-    messagingSenderId: 'COLOCAR_AQUI',
-    projectId: 'COLOCAR_AQUI',
-    authDomain: 'COLOCAR_AQUI',
-    storageBucket: 'COLOCAR_AQUI',
+    apiKey: 'AIzaSyAyWDaaarvPXRkP1f6F3CNb1JkGpR_qGHU',
+    appId: '1:637070400359:web:b943596cf6454ace5cadc2',
+    messagingSenderId: '637070400359',
+    projectId: 'comentarios-tempo-real',
+    authDomain: 'comentarios-tempo-real.firebaseapp.com',
+    storageBucket: 'comentarios-tempo-real.firebasestorage.app',
   );
 }

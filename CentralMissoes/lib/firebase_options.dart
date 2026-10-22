@@ -1,6 +1,3 @@
-// esse arquivo e gerado pelo comando:
-// dart pub global run flutterfire_cli:flutterfire configure
-// rodar o comando pra trocar pelos dados do projeto do firebase
 import 'package:firebase_core/firebase_core.dart';
 
 class DefaultFirebaseOptions {
@@ -9,11 +6,11 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'COLOCAR_AQUI',
-    appId: 'COLOCAR_AQUI',
-    messagingSenderId: 'COLOCAR_AQUI',
-    projectId: 'COLOCAR_AQUI',
-    authDomain: 'COLOCAR_AQUI',
-    storageBucket: 'COLOCAR_AQUI',
+    apiKey: 'AIzaSyBPSGt4n5C1FEWBEJupwwqUHQ0PlOU4iYA',
+    appId: '1:109391888599:web:ca7724d8bc80f421d8f092',
+    messagingSenderId: '109391888599',
+    projectId: 'central-missoes',
+    authDomain: 'central-missoes.firebaseapp.com',
+    storageBucket: 'central-missoes.firebasestorage.app',
   );
 }
