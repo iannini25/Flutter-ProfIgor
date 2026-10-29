@@ -10,11 +10,11 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'COLOCAR_AQUI',
-    appId: 'COLOCAR_AQUI',
-    messagingSenderId: 'COLOCAR_AQUI',
-    projectId: 'COLOCAR_AQUI',
-    authDomain: 'COLOCAR_AQUI',
-    storageBucket: 'COLOCAR_AQUI',
+    apiKey: 'AIzaSyC6XVTMT48IapLVQs92_ZkCXFP4OsexaeI',
+    appId: '1:335708251534:web:fe6127486a3f6c613cb0df',
+    messagingSenderId: '335708251534',
+    projectId: 'central-achados-ece83',
+    authDomain: 'central-achados-ece83.firebaseapp.com',
+    storageBucket: 'central-achados-ece83.firebasestorage.app',
   );
 }
